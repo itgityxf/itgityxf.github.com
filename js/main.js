@@ -224,16 +224,16 @@ DOMReady(function(){
 	for(var i=0;i<aDiv2.length;i++){
 		(function(index){
 			aDiv2[i].onclick=function(){
-				window.open('twjs/js'+(index+1)+'.html','_black')	
+				window.open('twjs/js'+(index+1)+'.html')	
 			};
 			aDiv3[i].onclick=function(){
-				window.open('twjs/js_page2-'+(index+1)+'.html','_black')	
+				window.open('twjs/js_page2-'+(index+1)+'.html')	
 			};
 			aDiv4[i].onclick=function(){
-				window.open('twjs/js_page3-'+(index+1)+'.html','_black')	
+				window.open('twjs/js_page3-'+(index+1)+'.html')	
 			};
 			aDiv5[i].onclick=function(){
-				window.open('twjs/js_page4-'+(index+1)+'.html','_black')	
+				window.open('twjs/js_page4-'+(index+1)+'.html')	
 			};		
 		})(i);
 	}

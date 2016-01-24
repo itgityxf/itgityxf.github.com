@@ -6,8 +6,8 @@
 <style>
 div,ul,ol{ padding:0; margin:0; list-style:none;}
 #box{ width:600px; height:337px; margin:100px auto; overflow:hidden; position:relative; top:0; left:0;}
-#box a{ position:absolute; width:80px; height:60px; text-align:center; line-height:60px; text-decoration:none; color:#fff; top:50%; margin-top:-30px; background:rgba(0,0,0,0.5); z-index:1; display:none;}
-#box a:hover{background:rgba(0,51,255,0.5);}
+#box a{ position:absolute; width:80px; height:60px; text-align:center; line-height:60px; text-decoration:none; color:#fff; top:50%; margin-top:-30px; background:green; z-index:1; display:none;}
+#box a:hover{background:red;}
 #prev{ left:0;}
 #next{ right:0;}
 ul{ overflow:hidden; position:absolute; top:0; left:0;}
@@ -44,7 +44,7 @@ window.onload=function(){
 	};
 	for(var i=0;i<aBtn.length;i++){
 		(function(index){
-			aBtn[i].onclick=function(){
+			aBtn[i].onmousemove=function(){
 				if(iNow%aBtn.length==0&&index==(aBtn.length-1)){
 					iNow--;	
 				}
@@ -111,11 +111,11 @@ window.onload=function(){
 	<a href="javascript:;" id="prev">←</a>
     <a href="javascript:;" id="next">→</a>
     <ul>
-   		<li><img src="../img-js_worker/aDiv2/0.jpg"></li>
-        <li><img src="../img-js_worker/aDiv2/1.jpg"></li> 
-        <li><img src="../img-js_worker/aDiv2/2.jpg"></li> 
-        <li><img src="../img-js_worker/aDiv2/3.jpg"></li> 
-        <li><img src="../img-js_worker/aDiv2/4.jpg"></li> 
+   		<li><img src="img-js_worker/aDiv2/0.jpg"></li>
+        <li><img src="img-js_worker/aDiv2/1.jpg"></li>
+        <li><img src="img-js_worker/aDiv2/2.jpg"></li> 
+        <li><img src="img-js_worker/aDiv2/3.jpg"></li>
+        <li><img src="img-js_worker/aDiv2/4.jpg"></li>
     </ul>
     <ol>
     	<li class="on"></li>
